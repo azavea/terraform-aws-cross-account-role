@@ -42,4 +42,4 @@ data "aws_iam_policy_document" "cross_account_assume_role" {
 
 # Outputs
 
-- `cross_account_role_arn` - ARN of the IAM role.
+- `role_arn` - ARN of the IAM role.
