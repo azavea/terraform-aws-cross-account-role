@@ -7,7 +7,7 @@ A Terraform module to create an IAM role for cross-account use. This module crea
 
 # Creates arn:aws:iam::111111111111:role/CrossAccountDeveloper
 module "cross_account_role" {
-  source                      = "github.com/azavea/terraform-aws-cross-account-role?ref=0.1.0"
+  source                      = "github.com/azavea/terraform-aws-cross-account-role?ref=1.0.0"
   name                        = "CrossAccountDeveloper"
   principal_arns              = ["222222222222","arn:aws:iam::333333333333:user/MyUser"]
   policy_arns                 = ["arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryPowerUser", "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess"]
@@ -42,4 +42,4 @@ data "aws_iam_policy_document" "cross_account_assume_role" {
 
 # Outputs
 
-- `cross_account_role_arn` - ARN of the IAM role.
+- `role_arn` - ARN of the IAM role.
