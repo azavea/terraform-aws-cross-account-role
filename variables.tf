@@ -12,4 +12,3 @@ variable "policy_arns" {
   type        = list(string)
   description = "List of ARNs of policies to be associated with the created IAM role"
 }
-
